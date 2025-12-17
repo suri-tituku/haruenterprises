@@ -1,1 +1,1872 @@
-<html><h1>Haru Enterprises provides complete end-to-end branding support—from creative design and digital marketing to printing, gifting, and event display solutions. We help brands elevate their presence through impactful visuals, premium production, and strategic marketing assets.<h1></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Haru Enterprises - Leading branding and printing company in Hyderabad offering offset printing, digital printing, corporate gifting, event branding, and marketing collateral solutions.">
+    <meta name="keywords" content="printing services Hyderabad, branding company, corporate gifting, event branding, offset printing, digital printing">
+    <title>Haru Enterprises | Premium Printing & Branding in Hyderabad</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,/9j/4AAQSkZJRg..." sizes="32x32">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Brand Colors from Logo */
+            --navy: #0A2540;
+            --teal: #14B8A6;
+            --teal-light: #5EEAD4;
+            --teal-lighter: #F0FDFA;
+            
+            /* Neutrals */
+            --white: #FFFFFF;
+            --gray-50: #F8FAFC;
+            --gray-100: #F1F5F9;
+            --gray-200: #E2E8F0;
+            --gray-300: #CBD5E1;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1E293B;
+            --gray-900: #0F172A;
+            
+            /* Text Colors */
+            --text-primary: #1E293B;
+            --text-secondary: #64748B;
+            --text-light: #94A3B8;
+            
+            /* Spacing */
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            --spacing-2xl: 48px;
+            --spacing-3xl: 64px;
+            --spacing-4xl: 100px;
+            --spacing-5xl: 120px;
+            
+            /* Border Radius */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 16px;
+            --radius-2xl: 20px;
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 12px rgba(20, 184, 166, 0.15);
+            --shadow-lg: 0 8px 20px rgba(20, 184, 166, 0.25);
+            --shadow-xl: 0 20px 40px rgba(10, 37, 64, 0.15);
+        }
+
+        body {
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text-primary);
+            background: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--navy);
+        }
+
+        h1 { font-size: 72px; letter-spacing: -0.02em; }
+        h2 { font-size: 48px; letter-spacing: -0.01em; }
+        h3 { font-size: 32px; }
+        h4 { font-size: 24px; }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        .body-large {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-lg);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+            box-shadow: var(--shadow-sm);
+        }
+
+        nav.hidden {
+            transform: translateY(-100%);
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: var(--spacing-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 48px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: var(--spacing-xl);
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--navy);
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--teal);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--teal);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: var(--teal);
+            color: var(--white) !important;
+            padding: 12px 24px;
+            border-radius: var(--radius-md);
+            transition: all 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-cta::after {
+            display: none;
+        }
+
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--navy);
+            transition: all 0.3s ease;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: var(--teal);
+            color: var(--white);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--navy);
+            border: 2px solid var(--teal);
+        }
+
+        .btn-secondary:hover {
+            background: var(--teal-lighter);
+        }
+
+        .btn-link {
+            background: none;
+            color: var(--teal);
+            padding: 0;
+            font-weight: 500;
+        }
+
+        .btn-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.03); opacity: 0.9; }
+        }
+
+        @keyframes slideMarquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stagger-item {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .stagger-container.visible .stagger-item {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stagger-container.visible .stagger-item:nth-child(1) { transition-delay: 0s; }
+        .stagger-container.visible .stagger-item:nth-child(2) { transition-delay: 0.12s; }
+        .stagger-container.visible .stagger-item:nth-child(3) { transition-delay: 0.24s; }
+        .stagger-container.visible .stagger-item:nth-child(4) { transition-delay: 0.36s; }
+        .stagger-container.visible .stagger-item:nth-child(5) { transition-delay: 0.48s; }
+        .stagger-container.visible .stagger-item:nth-child(6) { transition-delay: 0.6s; }
+
+        .float-animation {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .pulse-animation {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: calc(var(--spacing-5xl) + 80px) 0 var(--spacing-5xl);
+            background: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(20, 184, 166, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            gap: var(--spacing-3xl);
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .eyebrow {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .hero h1 {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .hero .subheadline {
+            font-size: 20px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .trust-indicators {
+            display: flex;
+            gap: var(--spacing-2xl);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid var(--gray-200);
+        }
+
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .trust-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--teal);
+            margin-bottom: 4px;
+        }
+
+        .trust-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-image {
+            width: 100%;
+            border-radius: var(--radius-2xl);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .floating-badge {
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+            background: var(--white);
+            padding: 16px 24px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        /* Client Trust Strip */
+        .trust-strip {
+            padding: var(--spacing-3xl) 0;
+            background: var(--gray-50);
+            overflow: hidden;
+        }
+
+        .trust-strip-label {
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-lg);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .marquee {
+            display: flex;
+            gap: var(--spacing-2xl);
+            animation: slideMarquee 30s linear infinite;
+        }
+
+        .marquee-container {
+            display: flex;
+            gap: var(--spacing-2xl);
+        }
+
+        .client-logo {
+            height: 40px;
+            width: 120px;
+            background: var(--gray-300);
+            border-radius: var(--radius-sm);
+            flex-shrink: 0;
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.3s ease;
+        }
+
+        .client-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        /* Section Styles */
+        section {
+            padding: var(--spacing-4xl) 0;
+        }
+
+        .section-light {
+            background: var(--white);
+        }
+
+        .section-gray {
+            background: var(--gray-50);
+        }
+
+        .section-dark {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        .section-dark h2,
+        .section-dark h3,
+        .section-dark p {
+            color: var(--white);
+        }
+
+        .section-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto var(--spacing-3xl);
+        }
+
+        .section-header h2 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .section-header p {
+            font-size: 18px;
+            color: var(--text-secondary);
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-2xl);
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: var(--spacing-xl);
+        }
+
+        .stat-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--teal-lighter);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--spacing-md);
+            color: var(--teal);
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: var(--text-secondary);
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-lg);
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-xl);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .service-card:hover {
+            border-color: var(--teal);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-4px);
+        }
+
+        .service-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--teal-lighter);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--spacing-md);
+            color: var(--teal);
+            font-size: 24px;
+        }
+
+        .service-card h3 {
+            margin-bottom: var(--spacing-md);
+            font-size: 22px;
+        }
+
+        .service-card p {
+            margin-bottom: var(--spacing-md);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .service-link {
+            color: var(--teal);
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: gap 0.3s ease;
+        }
+
+        .service-link:hover {
+            gap: 12px;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose-us {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: var(--spacing-3xl);
+            align-items: center;
+        }
+
+        .why-image {
+            width: 100%;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+        }
+
+        .badge-overlay {
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+            background: var(--white);
+            padding: 12px 24px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            box-shadow: var(--shadow-md);
+        }
+
+        .features-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+        }
+
+        .feature-item {
+            display: flex;
+            gap: var(--spacing-md);
+        }
+
+        .feature-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--teal);
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 16px;
+        }
+
+        .feature-content h4 {
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+
+        .feature-content p {
+            font-size: 15px;
+        }
+
+        /* Portfolio Section */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-md);
+        }
+
+        .portfolio-item {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-item:hover .portfolio-image {
+            transform: scale(1.08);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(10, 37, 64, 0.9), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: var(--spacing-lg);
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-category {
+            font-size: 12px;
+            color: var(--teal-light);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+        }
+
+        .portfolio-title {
+            font-size: 20px;
+            color: var(--white);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        /* Process Section */
+        .process-timeline {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--spacing-xl);
+            position: relative;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            top: 32px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(to right, var(--teal) 0%, var(--teal) 100%);
+            border-style: dashed;
+            border-width: 2px 0 0;
+            border-color: var(--teal);
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .process-number {
+            width: 64px;
+            height: 64px;
+            background: var(--teal);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 auto var(--spacing-md);
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 0 0 8px var(--white);
+        }
+
+        .process-step h4 {
+            margin-bottom: var(--spacing-sm);
+            font-size: 20px;
+        }
+
+        .process-step p {
+            font-size: 14px;
+        }
+
+        /* Testimonials Section */
+        .testimonials-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: var(--spacing-2xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+        }
+
+        .testimonial-quote {
+            font-size: 22px;
+            font-style: italic;
+            color: var(--navy);
+            line-height: 1.6;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-md);
+        }
+
+        .author-image {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: var(--gray-300);
+        }
+
+        .author-info h5 {
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+
+        .author-role {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .testimonial-rating {
+            color: #FFC107;
+            font-size: 20px;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .testimonial-nav {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-xl);
+        }
+
+        .testimonial-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--gray-300);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-dot.active {
+            background: var(--teal);
+            width: 32px;
+            border-radius: 6px;
+        }
+
+        /* CTA Block */
+        .cta-block {
+            background: linear-gradient(135deg, var(--teal) 0%, var(--navy) 100%);
+            padding: var(--spacing-5xl) 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-block::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l30 30-30 30L0 30z' fill='%23ffffff' fill-opacity='0.03'/%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-block h2 {
+            font-size: 56px;
+            color: var(--white);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .cta-block p {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .cta-block .btn-primary {
+            background: var(--white);
+            color: var(--navy);
+        }
+
+        .trust-line {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: var(--spacing-md);
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            gap: var(--spacing-3xl);
+        }
+
+        .contact-info h3 {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .contact-item {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--teal-lighter);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--teal);
+            flex-shrink: 0;
+        }
+
+        .contact-details h5 {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .contact-details p {
+            font-size: 15px;
+        }
+
+        .contact-details a {
+            color: var(--teal);
+            text-decoration: none;
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-xl);
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: var(--teal);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Form */
+        .contact-form {
+            background: var(--gray-50);
+            padding: var(--spacing-2xl);
+            border-radius: var(--radius-lg);
+        }
+
+        .contact-form h3 {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: var(--spacing-sm);
+            font-weight: 500;
+            color: var(--navy);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-md);
+            font-family: inherit;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--teal);
+            box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+        }
+
+        .form-group .btn-primary {
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--navy);
+            color: var(--white);
+            padding: var(--spacing-3xl) 0 var(--spacing-lg);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: var(--spacing-2xl);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .footer-brand {
+            max-width: 300px;
+        }
+
+        .footer-logo {
+            height: 48px;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-tagline {
+            color: var(--teal-light);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-column h4 {
+            color: var(--white);
+            font-size: 18px;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 15px;
+        }
+
+        .footer-links a:hover {
+            color: var(--teal-light);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: var(--spacing-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: var(--spacing-lg);
+        }
+
+        .footer-legal a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+        }
+
+        .footer-legal a:hover {
+            color: var(--teal-light);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            h1 { font-size: 56px; }
+            h2 { font-size: 40px; }
+            
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-cta {
+                justify-content: center;
+            }
+            
+            .trust-indicators {
+                justify-content: center;
+            }
+            
+            .services-grid,
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .process-timeline {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .why-choose-us,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            h1 { font-size: 42px; }
+            h2 { font-size: 32px; }
+            
+            .hero {
+                padding: calc(var(--spacing-4xl) + 80px) 0 var(--spacing-3xl);
+            }
+            
+            .services-grid,
+            .portfolio-grid,
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-timeline {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-timeline::before {
+                display: none;
+            }
+            
+            .cta-block h2 {
+                font-size: 36px;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                gap: var(--spacing-md);
+                text-align: center;
+            }
+        }
+
+        /* Utility Classes */
+        .text-center { text-align: center; }
+        .mt-lg { margin-top: var(--spacing-lg); }
+        .mb-lg { margin-bottom: var(--spacing-lg); }
+        .mb-xl { margin-bottom: var(--spacing-xl); }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <img src="/mnt/user-data/uploads/logo_180X180.jpg" alt="Haru Enterprises" class="logo">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact" class="nav-cta">Get Quote</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="eyebrow">HYDERABAD'S TRUSTED BRANDING PARTNER</div>
+                    <h1>Premium Printing & Branding Solutions That Grow Your Business</h1>
+                    <p class="subheadline">From brand identity to event branding, corporate gifting to marketing collaterals — Haru Enterprises delivers quality printing services that make lasting impressions. Fast turnaround. Transparent pricing. Exceptional results.</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary pulse-animation">Get Your Free Quote →</a>
+                        <a href="#portfolio" class="btn btn-secondary">Explore Our Portfolio</a>
+                    </div>
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <div class="trust-number">500+</div>
+                            <div class="trust-label">Happy Clients</div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-number">10+</div>
+                            <div class="trust-label">Years Experience</div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-number">24h</div>
+                            <div class="trust-label">Turnaround</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="float-animation">
+                        <svg class="hero-image" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="400" fill="#F8FAFC" rx="20"/>
+                            <path d="M200 100L280 150L280 250L200 300L120 250L120 150Z" fill="#14B8A6" opacity="0.2"/>
+                            <path d="M200 120L260 155L260 235L200 270L140 235L140 155Z" fill="#0A2540"/>
+                            <rect x="180" y="160" width="40" height="100" fill="#14B8A6"/>
+                            <circle cx="200" cy="320" r="8" fill="#14B8A6"/>
+                            <circle cx="170" cy="330" r="6" fill="#5EEAD4"/>
+                            <circle cx="230" cy="330" r="6" fill="#5EEAD4"/>
+                        </svg>
+                    </div>
+                    <div class="floating-badge">✓ Trusted in Hyderabad</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Trust Strip -->
+    <section class="trust-strip">
+        <div class="trust-strip-label">Trusted by leading businesses across Hyderabad</div>
+        <div style="overflow: hidden;">
+            <div class="marquee">
+                <div class="marquee-container">
+                    <div class="client-logo"></div>
+                    <div class="client-logo"></div>
+                    <div class="client-logo"></div>
+                    <div class="client-logo"></div>
+                    <div class="client-logo"></div>
+                    <div class="client-logo"></div>
+                </div>
+                <div class="marquee-container" aria-hidden="true">
+                    <div class="client-logo"></div>
+                    <div class="client-logo"></div>
+                    <div class="client-logo"></div>
+                    <div class="client-logo"></div>
+                    <div class="client-logo"></div>
+                    <div class="client-logo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-light animate-on-scroll">
+        <div class="container">
+            <div class="about-content">
+                <div class="section-label">About Us</div>
+                <h2>Building Brands Through Print, Creativity & Precision</h2>
+                <p class="about-text">At Haru Enterprises, we believe great branding starts with flawless execution. Since 2014, we've partnered with businesses across Hyderabad to deliver high-impact printing solutions — from sleek business cards to large-format event banners, premium corporate gifts to complete brand identity systems.</p>
+                <p class="about-text">Whether you're launching a startup, hosting a corporate event, or refreshing your brand materials, our team combines creative expertise with cutting-edge printing technology to bring your vision to life. Quality, speed, and customer satisfaction aren't just promises — they're our standards.</p>
+                
+                <div class="stats-grid stagger-container">
+                    <div class="stat-card stagger-item">
+                        <div class="stat-icon">10+</div>
+                        <div class="stat-number">10+ Years</div>
+                        <div class="stat-label">Experience</div>
+                    </div>
+                    <div class="stat-card stagger-item">
+                        <div class="stat-icon">500+</div>
+                        <div class="stat-number">500+ Clients</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-card stagger-item">
+                        <div class="stat-icon">50K+</div>
+                        <div class="stat-number">50,000+</div>
+                        <div class="stat-label">Orders Delivered</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-gray animate-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2>What We Offer</h2>
+                <p>Comprehensive branding and printing solutions designed for modern businesses</p>
+            </div>
+            <div class="services-grid stagger-container">
+                <div class="service-card stagger-item">
+                    <div class="service-icon">🎨</div>
+                    <h3>Brand Identity Design</h3>
+                    <p>Create a memorable brand identity with logo design, brand guidelines, and cohesive visual systems that resonate with your audience.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card stagger-item">
+                    <div class="service-icon">🖨️</div>
+                    <h3>Offset & Digital Printing</h3>
+                    <p>From brochures to catalogs, business cards to flyers — premium printing services with vibrant colors and sharp details.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card stagger-item">
+                    <div class="service-icon">🎁</div>
+                    <h3>Corporate Gifting</h3>
+                    <p>Impress clients and employees with custom-branded gifts, hampers, and promotional merchandise that reflect your company values.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card stagger-item">
+                    <div class="service-icon">📢</div>
+                    <h3>Event Branding</h3>
+                    <p>Make your events unforgettable with custom banners, backdrops, standees, badges, and complete event collateral solutions.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card stagger-item">
+                    <div class="service-icon">📦</div>
+                    <h3>Packaging Solutions</h3>
+                    <p>Stand out on shelves with custom packaging design and printing — boxes, labels, bags, and more.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card stagger-item">
+                    <div class="service-icon">📊</div>
+                    <h3>Marketing Collaterals</h3>
+                    <p>Elevate your marketing campaigns with professional brochures, posters, banners, and promotional materials that convert.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section-light animate-on-scroll">
+        <div class="container">
+            <div class="why-choose-us">
+                <div class="why-image-container float-animation">
+                    <svg class="why-image" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="500" height="400" fill="#0A2540" rx="16"/>
+                        <rect x="50" y="50" width="180" height="120" fill="#14B8A6" opacity="0.3" rx="8"/>
+                        <rect x="270" y="50" width="180" height="120" fill="#14B8A6" opacity="0.3" rx="8"/>
+                        <rect x="50" y="210" width="180" height="140" fill="#5EEAD4" opacity="0.2" rx="8"/>
+                        <rect x="270" y="210" width="180" height="140" fill="#5EEAD4" opacity="0.2" rx="8"/>
+                        <circle cx="140" cy="110" r="30" fill="#14B8A6"/>
+                        <circle cx="360" cy="110" r="30" fill="#14B8A6"/>
+                    </svg>
+                    <div class="badge-overlay">✓ ISO Certified</div>
+                </div>
+                <div>
+                    <div class="section-label">Why Choose Us</div>
+                    <h2 class="mb-xl">Why Businesses Trust Haru Enterprises</h2>
+                    <div class="features-list stagger-container">
+                        <div class="feature-item stagger-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-content">
+                                <h4>Lightning-Fast Turnaround</h4>
+                                <p>Need it urgently? We deliver. Our streamlined production process ensures your orders are completed on time — often within 24 hours — without compromising quality.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item stagger-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-content">
+                                <h4>Premium Quality Guaranteed</h4>
+                                <p>We use only the finest materials and latest printing technology. Every product undergoes strict quality checks before delivery, ensuring perfection every time.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item stagger-item">
+                            <div class="feature-icon">🤝</div>
+                            <div class="feature-content">
+                                <h4>End-to-End Support</h4>
+                                <p>From initial consultation to final delivery, our team guides you through every step. Questions? Revisions? We're here to help — always.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item stagger-item">
+                            <div class="feature-icon">💰</div>
+                            <div class="feature-content">
+                                <h4>Transparent Pricing</h4>
+                                <p>No hidden fees. No surprise charges. Get clear, upfront pricing on all services. Quality printing shouldn't break your budget.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary mt-lg">Start Your Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-dark animate-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: white;">Our Recent Work</h2>
+                <p style="color: rgba(255,255,255,0.8);">Visual proof of our capabilities and creative excellence</p>
+            </div>
+            <div class="portfolio-grid stagger-container">
+                <div class="portfolio-item stagger-item">
+                    <svg class="portfolio-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#14B8A6"/>
+                        <rect x="50" y="50" width="300" height="200" fill="#0A2540" opacity="0.6"/>
+                        <circle cx="200" cy="150" r="60" fill="#5EEAD4"/>
+                    </svg>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Brand Identity</div>
+                        <div class="portfolio-title">Tech Startup Branding</div>
+                        <a href="#contact" class="service-link" style="color: white;">View Case Study →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item stagger-item">
+                    <svg class="portfolio-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#0A2540"/>
+                        <rect x="100" y="80" width="200" height="140" fill="#14B8A6" opacity="0.8"/>
+                    </svg>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Corporate Gifting</div>
+                        <div class="portfolio-title">Annual Conference Hampers</div>
+                        <a href="#contact" class="service-link" style="color: white;">View Case Study →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item stagger-item">
+                    <svg class="portfolio-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#5EEAD4"/>
+                        <path d="M0 150 L200 50 L400 150 L200 250 Z" fill="#0A2540" opacity="0.7"/>
+                    </svg>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Event Branding</div>
+                        <div class="portfolio-title">Product Launch Campaign</div>
+                        <a href="#contact" class="service-link" style="color: white;">View Case Study →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item stagger-item">
+                    <svg class="portfolio-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#0A2540"/>
+                        <circle cx="120" cy="100" r="40" fill="#14B8A6"/>
+                        <circle cx="280" cy="100" r="40" fill="#5EEAD4"/>
+                        <rect x="80" y="180" width="240" height="80" fill="#14B8A6" opacity="0.6"/>
+                    </svg>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Print Collateral</div>
+                        <div class="portfolio-title">Marketing Brochure Design</div>
+                        <a href="#contact" class="service-link" style="color: white;">View Case Study →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item stagger-item">
+                    <svg class="portfolio-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#14B8A6"/>
+                        <rect x="80" y="60" width="240" height="180" fill="#0A2540" opacity="0.8" rx="8"/>
+                    </svg>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Packaging</div>
+                        <div class="portfolio-title">Premium Product Packaging</div>
+                        <a href="#contact" class="service-link" style="color: white;">View Case Study →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item stagger-item">
+                    <svg class="portfolio-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#F8FAFC"/>
+                        <rect x="50" y="50" width="300" height="200" fill="#0A2540"/>
+                        <rect x="100" y="100" width="200" height="100" fill="#14B8A6"/>
+                    </svg>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Digital Print</div>
+                        <div class="portfolio-title">Large Format Banners</div>
+                        <a href="#contact" class="service-link" style="color: white;">View Case Study →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-lg">
+                <a href="#contact" class="btn btn-primary">See All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section-light animate-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Simple Process</h2>
+                <p>From concept to delivery in four easy steps</p>
+            </div>
+            <div class="process-timeline stagger-container">
+                <div class="process-step stagger-item">
+                    <div class="process-number">1</div>
+                    <h4>Consultation</h4>
+                    <p>Share your project requirements, timeline, and budget. Our team reviews your needs and provides expert recommendations.</p>
+                </div>
+                <div class="process-step stagger-item">
+                    <div class="process-number">2</div>
+                    <h4>Design & Approval</h4>
+                    <p>Receive professional design mockups for review. We refine until you're 100% satisfied — unlimited revisions included.</p>
+                </div>
+                <div class="process-step stagger-item">
+                    <div class="process-number">3</div>
+                    <h4>Production</h4>
+                    <p>Once approved, our production team begins using premium materials and state-of-the-art printing equipment.</p>
+                </div>
+                <div class="process-step stagger-item">
+                    <div class="process-number">4</div>
+                    <h4>Delivery</h4>
+                    <p>Your order is carefully packaged and delivered on time, every time. Quality checked. Ready to impress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-gray animate-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-quote">"Haru Enterprises transformed our entire brand identity. From logo design to business cards, every detail was perfect. The team's professionalism and speed were exceptional. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-image"></div>
+                        <div class="author-info">
+                            <h5>Rajesh Kumar</h5>
+                            <p class="author-role">Founder, TechVision Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active"></div>
+                    <div class="testimonial-dot"></div>
+                    <div class="testimonial-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Block -->
+    <section class="cta-block">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Elevate Your Brand?</h2>
+                <p>Let's bring your vision to life with premium printing and branding solutions tailored to your business goals.</p>
+                <a href="#contact" class="btn btn-primary pulse-animation">Get Your Free Quote Today →</a>
+                <p class="trust-line">No commitment required. We respond within 2 hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Let's discuss your next project</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h5>Address</h5>
+                            <p>Hyderabad, Telangana<br>India 500001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h5>Phone</h5>
+                            <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h5>Email</h5>
+                            <p><a href="mailto:info@haruenterprises.com">info@haruenterprises.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h5>Business Hours</h5>
+                            <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                        <a href="#" class="social-link">wa</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Request a Quote</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="brand-identity">Brand Identity Design</option>
+                                <option value="printing">Offset & Digital Printing</option>
+                                <option value="corporate-gifting">Corporate Gifting</option>
+                                <option value="event-branding">Event Branding</option>
+                                <option value="packaging">Packaging Solutions</option>
+                                <option value="marketing">Marketing Collaterals</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the terms and conditions</label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Send Message →</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="/mnt/user-data/uploads/logo_128X128.jpg" alt="Haru Enterprises" class="footer-logo">
+                    <p class="footer-tagline">Print. Promote. Grow.</p>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Leading branding and printing company in Hyderabad offering comprehensive solutions for businesses.</p>
+                    <div class="social-links" style="margin-top: 20px;">
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                        <a href="#" class="social-link">wa</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Brand Identity Design</a></li>
+                        <li><a href="#services">Offset Printing</a></li>
+                        <li><a href="#services">Corporate Gifting</a></li>
+                        <li><a href="#services">Event Branding</a></li>
+                        <li><a href="#services">Packaging Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>Hyderabad, Telangana</li>
+                        <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                        <li><a href="mailto:info@haruenterprises.com">info@haruenterprises.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Haru Enterprises. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Animation Observer
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.animate-on-scroll, .stagger-container').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smart Navbar Hide/Show
+        let lastScroll = 0;
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 100) {
+                navbar.classList.remove('hidden');
+            } else if (currentScroll > lastScroll && currentScroll > 100) {
+                navbar.classList.add('hidden');
+            } else {
+                navbar.classList.remove('hidden');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Smooth Scroll for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Testimonial Slider
+        const testimonials = [
+            {
+                quote: "Haru Enterprises transformed our entire brand identity. From logo design to business cards, every detail was perfect. The team's professionalism and speed were exceptional. Highly recommend!",
+                author: "Rajesh Kumar",
+                role: "Founder, TechVision Solutions"
+            },
+            {
+                quote: "We needed 500 corporate gift boxes for our annual meet in just 48 hours. Haru delivered ahead of schedule with outstanding quality. Our clients loved them!",
+                author: "Priya Sharma",
+                role: "HR Manager, Nexus Corp"
+            },
+            {
+                quote: "The event branding for our product launch was flawless. Banners, standees, badges — everything was perfect. They truly understand what businesses need.",
+                author: "Aditya Reddy",
+                role: "Marketing Head, BrightPath"
+            }
+        ];
+
+        let currentTestimonial = 0;
+
+        function updateTestimonial(index) {
+            const card = document.querySelector('.testimonial-card');
+            const dots = document.querySelectorAll('.testimonial-dot');
+            
+            // Fade out
+            card.style.opacity = '0';
+            
+            setTimeout(() => {
+                // Update content
+                const testimonial = testimonials[index];
+                card.querySelector('.testimonial-quote').textContent = `"${testimonial.quote}"`;
+                card.querySelector('.author-info h5').textContent = testimonial.author;
+                card.querySelector('.author-role').textContent = testimonial.role;
+                
+                // Update dots
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === index);
+                });
+                
+                // Fade in
+                card.style.opacity = '1';
+            }, 300);
+        }
+
+        // Auto-advance testimonials
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            updateTestimonial(currentTestimonial);
+        }, 5000);
+
+        // Manual testimonial navigation
+        document.querySelectorAll('.testimonial-dot').forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentTestimonial = index;
+                updateTestimonial(index);
+            });
+        });
+
+        // Form Submission
+        document.querySelector('.contact-form form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will respond within 2 hours.');
+            e.target.reset();
+        });
+
+        // Mobile Menu Toggle
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileToggle?.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+</body>
+</html>
